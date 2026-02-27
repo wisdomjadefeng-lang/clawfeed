@@ -4,8 +4,8 @@
   "description": "AI-powered news digest tool \u2014 generates structured summaries from Twitter/RSS feeds",
   "type": "module",
   "scripts": {
-    "start": "node src/server.mjs",
-    "dev": "node --watch src/server.mjs",
+    "start": "node api.js && node src/server.mjs",
+    "dev": "node api.js && node --watch src/server.mjs",
     "lint": "eslint src/",
     "test": "bash test/e2e.sh"
   },
